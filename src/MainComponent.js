@@ -29,12 +29,16 @@ class Main extends Component {
   }
 
   render() {
+    // console.log("test", this.props)
     return (
       <div className='App'>
         <h1>Redux To Do List</h1>
         <ul>
           {/* Task: create a map that displays the list item. don't forget the unique key. we will be using the index of the array*/}
-          <li key={'unique key'}>
+          {this.props.todos.todo.map(todo => {
+            return
+          })
+          <li key={''}>
             <input
               type='checkbox'
               // Task: replace true with the property used to show completion
